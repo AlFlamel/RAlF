@@ -1,3 +1,9 @@
+import datetime 
+
+def printTimeStamp(name): 
+  print('Автор програми: ' + name) 
+  print('Час компіляції: ' + str(datetime.datetime.now()))
+
 def zodiac_sign(day, month):
     if month == 'december':
         astro_sign = 'Sagittarius' if (day < 22) else 'capricorn'
@@ -37,7 +43,9 @@ def zodiac_sign(day, month):
          
     print(astro_sign)
      
-if __name__ == '__main__':
-    day = 19
-    month = "may"
-    zodiac_sign(day, month)
+day = int(input("Введите день: "))
+month = str(input("Введите месяц: "))
+
+zodiac_sign(day, month)
+
+printTimeStamp("Alexey.")
