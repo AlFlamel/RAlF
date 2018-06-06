@@ -1,3 +1,9 @@
+import datetime 
+
+def printTimeStamp(name): 
+  print('Автор програми: ' + name) 
+  print('Час компіляції: ' + str(datetime.datetime.now()))
+
 a = int(input ("Введіть кількість секунд: "))
 h = str(a//3600)
 d = str(a//86400)
@@ -13,3 +19,5 @@ else:
     s = str(s)
 
 print(d +':' + m + ':' + s + ';' + h)
+
+printTimeStamp("Alexey.")
